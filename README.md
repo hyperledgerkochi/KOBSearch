@@ -1,10 +1,40 @@
-# KOBSearch
 
-The KOBSearch is a search service that a user will directly interact with. That means, basically, a user can enter a search criteria and will be returned a list of matches based on the criteria. Here the database will contain informations, regarding the association as well as the members of the association, that they have provided during registration. 
+| Title | KOBSearch |
+|--- | ---|
+| Version | TBD |
 
-For example, an association (eg. Teachers Association) will have to provide details, like what the association is about, when it came into being, names of office bearers, lisence or registration numbers, location of its office etc, during the registration of the association with KOB VON network; so that whenever a citizen searches for this association, they get all these informations. The citizen may also search for a particular person (eg. a teacher) whose identity is verified as belonging to this association. So this result should provide the user with details (like the subject of the teacher, educational qualifications, experience, school that she serves etc).
 
-Other specific use cases can be listed as:
--	A citizen can search for a doctor or for a lawyer, to confirm or verify his identity. The search result would help the citizen to know more about the qualification and experience of the doctor or lawyer; even gain more insight into the informations, like specialization field, name of the hospital or court where he works etc. This is made possible because the doctor would be issued a digital identity by an  issuing association like IMA that is registered with KOB. And in case of lawyers the association will be the Bar Council of India (Kochi High Court chapter). So this digital identity would serve as a digital proof for the citizen to confirm that the respective practitioner is genuine. Only those details that  the presenter wishes to diplay to the verifier will be displayed during the search.
+### Abstract   
 
--	A citizen can search for an association like Trade unions in the city of Kochi. The search should return a list of trade unions operating in the city. The user can select one among the search results, so that he will be displayed a lot more information about what he is looking for. Each of the search result will be different in its own means. A specific trade union search result may contain details like : a brief description, year founded, lisence number, list of office bearers, details of office location etc.
+The KOBSearch is a search service that provides a registered user with the information about the organizations (or members of the organization) that are operating in the city of Cochin and registered with KochiOrgBook (KOB). KOB is like a directory that will contain the verifiable data about the organizations thus enabling trusted digital verification service.
+
+### Dependent Projects
+
+KOBSearch is a UI plug-in that will run on [KOBConnect](https://github.com/hyperledgerkochi/KOBConnect) Wallet App.
+
+### Motivation
+
+In the existing scenario, there are many possibilites for crimes (like document forgery) and other fraudulent activities. This makes it difficult for a citizen to confirm the original identity of various associations or people and thereby fall into the traps set by cheaters. That means, there is an element of trust that is missing.  Inorder to avoid this, finding authentic and authoritative data about people or orgaiztaion, has become a crucial factor. KOBSearch helps to achieve this.
+
+### Status of the project
+
+Incubation
+
+### Solution
+
+KOBSearch helps the people to establish a trusted relationship with an entity (can be an organization or a member of the organization) by confirming their identities. KOB serves as a searchable public directory containing open verifiable data about the organizations that are operating in the city of Cochin. Talking about organizations, it can be any associations or service providers that are decentralized. Once registered, they get a digital identity of their own. 
+
+A citizen can avail the service of KOBSearch to quickly verify if the entity is a legitimate one or not. The citizen is able to easily retrieve data regarding the entity in the form of verifiable credentials. The data can include registration ID, registration status, registration date and other essential details. These data are cryptographically verified ones; so a citizen can completely trust the informations. Since these are decentarlized, one need not worry about the revoking of these identities all of a sudden.
+
+### Contributors
+
+[Shahna Mohammed](https://github.com/shahnamohammed)
+
+### Testing the project
+
+*TBD*
+
+### References
+
+* [OrgBook BC](https://www.orgbook.gov.bc.ca/en/home)
+* [Edx Course - Introduction to Hyperledger Sovereign Identity Blockchain Solutions](https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS172x+3T2019/home)
