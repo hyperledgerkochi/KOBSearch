@@ -30,8 +30,19 @@ KOBSearch helps the people to establish a trusted relationship with an entity (c
 
 A citizen can avail the service of KOBSearch to quickly verify if the entity is a legitimate one or not. The citizen is able to easily retrieve data regarding the entity in the form of verifiable credentials. The data can include registration ID, registration status, registration date and other essential details. These data are cryptographically verified ones; so a citizen can completely trust the information. The search can also lookup for third-party service providers that are registered on KOB with a public DID. It is also possible to search for associations and credentials that the associations can issue or verify. The third-party service providers can be leveraged for these verification purposes. For example, if a restaurant needs to be verified, it can be done by the 3rd party services like Swiggy or Zomato. These verifications can also be done by another association, like the restaurant owner's association. One can also search how to get a credential as a restaurant owner in Kochi (either through a food delivery provider or restaurant owners' association).
 
-The search is performed on two types of data stores. One type is the Wallet data that are stored on the mobile phone of the citizen. So a search performed on this data will be a local search. The other type of search is for the data at the VCR level, which would be a broader search on the registered entities. Two capabilities of KOBSearch can also be noted here. Looking at KOBSearch as yellow pages, it becomes a service offering utility. While as a component, KOBSearch gets embedded into the Association Wallet.
+The search is performed on two types of data stores. One type is the Wallet data that are stored on the mobile phone of the citizen. So a search performed on this data will be a local search. The other type of search is for the data at the VCR level, which would be a broader search on the registered entities. Two capabilities of KOBSearch can also be noted here. Looking at KOBSearch as yellow pages, it becomes a service offering utility. While as a component, KOBSearch gets embedded into the Wallets.
 
+KOBSearch can be implemented using Apache Solr, which is an open-source platform that helps in building search applications. Searching in Solr is accomplished by a three step process. 
+
+The first step is the indexing of documents. Indexing is the collecting, parsing, and storing of data to facilitate fast and accurate information retrieval. Solr uses the concept of inverted index, wherein the mapping from content, such as words, to its location in the document, is stored in the Solr index. The second step is the querying. Solr processes the user's query with the query request handler which in turn calls the query parser. A query parser interprets the individual terms and parameters of a query. The parsed query is then matched with the Solr index to check for a match. The third and final step in Solr search is the ranking of results. The results after performing the search is returned and ranked accoriding to its relevance score. Response Writer generates the formatted responses after the search which can then be appropriately parsed by KOB Association Wallet or KOB Connect and use to display the search results.
+
+## Usecase Diagram
+
+<img src="images/KOBSearch_Usecase.png" height=400 width=500>
+
+## Sequence Diagram 
+
+<img src="images/KOBSearch_Sequence.png" height=400 width=500>
 
 ## Contributors
 
@@ -45,3 +56,4 @@ The search is performed on two types of data stores. One type is the Wallet data
 
 * [OrgBook BC](https://www.orgbook.gov.bc.ca/en/home)
 * [Edx Course - Introduction to Hyperledger Sovereign Identity Blockchain Solutions](https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS172x+3T2019/home)
+* [Apache Solr Reference Guide](https://solr.apache.org/guide/8_8/)
