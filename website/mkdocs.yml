@@ -1,0 +1,17 @@
+site_name: KOBSearch
+theme:
+  name: material
+extra_css:
+  - stylesheets/extra.css
+markdown extensions:
+  - attr_list
+nav:
+  - Overview: index.md
+  - Dependent Projects: dependent.md
+  - Motivation: motivation.md
+  - Use Case Diagram: usecase.md
+  - Sequence Diagram: sequence.md
+  - Status of the project: status.md
+  - Solution: solution.md
+  - Contributors: contributors.md
+  - License: license.md

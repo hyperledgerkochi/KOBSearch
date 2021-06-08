@@ -1,0 +1,3 @@
+In the existing scenario, there are many possibilities for document frauds like forging, counterfeiting, altering, falsification etc. This makes it difficult for a citizen to confirm the original identity of various associations or people and thereby fall into the traps set by cheaters. That means, there is an element of trust that is missing. 
+
+In order to avoid this, finding authentic and authoritative data about people or organization, has become a crucial factor. KOBSearch provides the facility of searching for the data that they can trust.
